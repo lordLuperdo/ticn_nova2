@@ -9,7 +9,7 @@
    
 
    defineProps([ 'foto','titulo','text' ,'array_precios_card','precio_titulo','precio_precio', 'titulo_plus', 'text_plus',
-    'array_card_plus','text_card_plus','icono_plus','metodo',
+    'array_card_plus','text_card_plus','icono_plus','metodo','valor_servicio','inquietud_service','telefono_service','email_service','enviar_datos','class_env',
     'icon_card_service', 'title_card_service', 'to_card_service','class_card_service','s','array_precios_card'])
 
     const smoothScroll = () => {
@@ -48,7 +48,13 @@
     
     
     <formulario_service id="touch_service"
-    :m="metodo"
+    :metodo="metodo"
+    :value_form_service_service="valor_servicio"
+    :inquietud_form_service_service="inquietud_service"
+    :telefono_service_service="telefono_service"
+    :email_service_service="email_service"
+    :enviar_datos="enviar_datos"
+    :class_env="class_env"
     ></formulario_service>
 
     <section class="service_cards">

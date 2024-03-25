@@ -26,21 +26,21 @@ defineProps([ 'text' ,'cards','array_servicio'])
   margin-top: 2%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  
   gap: 20px;
-  padding: 3%;
-}
-.plus_services p{
-  text-align: center ;
+ 
 }
 
+.plus_services_title{
+  text-align: left;
+}
 .plus_services_container{
   box-sizing: border-box;
   width: 100%;
   
   display: flex;
   gap: 20px;
-  justify-content: center;
+  
   width: 100%;
   flex-wrap: wrap;
 }
@@ -49,8 +49,8 @@ defineProps([ 'text' ,'cards','array_servicio'])
  
   
   display: flex;
-  justify-content: center;
-  height: 100%;
+  
+  height: 80%;
   box-sizing: content-box;
 
 }

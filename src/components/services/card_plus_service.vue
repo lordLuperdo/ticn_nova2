@@ -23,12 +23,11 @@ defineProps(['tcp', 'i'])
     min-height: 100%;
     display: flex;
     background-color: var(--firts-color);
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 30px;
+    padding: 10px;
+    
     gap: 15px;
     box-sizing: content-box;
-    border-radius: 8px;
+    border-radius: 6px;
     align-items: center;
 }
 .icono_card_plus ,.description_card_plus{

@@ -52,7 +52,14 @@ const router = createRouter({
       
     },
 
-  ]
+  ],
+
+  
 })
+
+router.afterEach(() => {
+  // Desplazar al inicio de la página después de cambiar de ruta
+  window.scrollTo(0, 0);
+});
 
 export default router

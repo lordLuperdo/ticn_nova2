@@ -136,7 +136,7 @@ const send_email = ()=>{
 
   <div class="container_plus_info">
     <p class="parrafo_plus">
-      Sumérjase en la excelencia de nuestros servicios tecnológicos respaldados por un equipo de profesionales altamente experimentados, cada uno con más de 10 años de dedicación en el campo. En nuestro compromiso por ofrecer resultados sobresalientes, nos destacamos por fusionar la riqueza de la experiencia con un enfoque innovador. A lo largo de los años, hemos demostrado una capacidad probada para superar las expectativas, estableciendo relaciones sólidas basadas en la confianza mutua con nuestros clientes.
+      Contamos con una excelencia inigualable en nuestros servicios tecnológicos respaldados por un equipo de profesionales altamente experimentados, cada uno con más de 10 años de dedicación en el campo. En nuestro compromiso por ofrecer resultados sobresalientes, nos destacamos por fusionar la riqueza de la experiencia con un enfoque innovador. A lo largo de los años, hemos demostrado una capacidad probada para superar las expectativas, estableciendo relaciones sólidas basadas en la confianza mutua con nuestros clientes.
       <br><br>
 Con un enfoque pionero, nos esforzamos por mantenernos a la cabeza de las tendencias tecnológicas, adaptándonos ágilmente a los avances del mercado. Nuestra firma se distingue por proporcionar soluciones personalizadas que responden a las necesidades específicas de cada cliente, garantizando así un servicio que va más allá de lo convencional. 
     </p>
@@ -293,7 +293,7 @@ main{
 .container_main{
   flex-direction: column;
   display: flex;
-  width: 50%;
+  width: 40%;
   height: 70%;
   gap: 1%;
   margin-top: 3%;
@@ -303,13 +303,13 @@ main{
 
 .main_title{
   color: aliceblue;
-  font-size: 300%;
+  font-size: 310%;
   
 }
 
 .main_parrafo{
   color: white;
-  font-size: 128%;  
+
 
 }
 

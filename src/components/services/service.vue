@@ -18,8 +18,9 @@
 </script>
 
 <template>
-    <div class="info_service">
-      <div class="service_info">
+
+  <div class="info_service">
+    <div class="service_info">
         
         <h1 class="service_title">{{ titulo }}</h1>
         <p class="service_text">
@@ -33,19 +34,28 @@
             ></card_precio>
           </li>
         </ul>
-        <a href="#touch_service" @click.prevent="smoothScroll" class="solicitar_servicio">Solicitar servicio</a>
-      </div>
-      <div class="service_photo">
-        <img :src="foto" alt="no se encontro la foto">
-      </div>
+         
       
-    </div>
-
     <plus_service
     :text="text_plus"
     :array_servicio="array_card_plus"
     ></plus_service>
+
+      </div>
     
+      
+      <div class="service_photo">
+
+        <div class="container_photo_service">  
+          <img :src="foto" alt="no se encontro la foto">
+        </div>
+      
+        <a href="#touch_service" @click.prevent="smoothScroll" class="solicitar_servicio">Solicitar servicio</a>
+      </div>
+      
+    </div>
+  
+
     
     <formulario_service id="touch_service"
     :metodo="metodo"
@@ -87,8 +97,9 @@
   padding-left: 40px;
   padding-right: 40px;
   gap: 40px;
-  max-height: 80vh;
+ 
   justify-content: center;
+
   
 }
 .service_info {
@@ -98,6 +109,9 @@
   padding: 3%;
   padding-left: 0%;
   padding-right: 0%;
+  
+  flex-grow: 1;
+  width: 30%;
 }
 .container_card_precio{
  padding: 0%;
@@ -120,8 +134,8 @@
 .solicitar_servicio{
   background-color: var(--second-color);
   text-decoration: none;
-  padding: 2%;
-  border-radius: 0 0 0 25px ;
+  padding: 4%;
+  border-radius: 0 0 10px 10px ;
   text-align: center;
   color: white;
   font-size: large;
@@ -129,16 +143,27 @@
 }
 .service_photo{
   display: flex;
-  overflow: hidden;
-  min-width: 40%;
-  justify-content: center;
+  gap: 3%;
+  flex-direction: column;
   border-radius: 0 0 25px 0;
-  max-height: 50vh;
-  margin-top: 8%;
+  width: 45%;
+  margin-top: 7vh;
+  position: sticky;
+  top: 5%;
+
+  height: 80%;
+}
+.container_photo_service{
+  width: 100%;
+  max-height: 60vh;
+  display: flex;
+  background-color: chocolate;
+  border-radius: 0 30px 0 0;
+  overflow: hidden;
 }
 .service_photo img{
+  width: 100%;
   object-fit: cover;
-  scale: 250%;
 }
 .solicitar_servicio:hover{
   background-color: var(--firts-color);

@@ -31,3 +31,4 @@ coverage
 
 #variables de entorno
 .env
+*firebaseConfig.js

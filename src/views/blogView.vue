@@ -5,7 +5,7 @@ import foot from '../components/footer.vue'
 <template>
     <heads></heads>
     <h1>
-        blog
+        blog g
     </h1>
     <foot></foot>
 </template>

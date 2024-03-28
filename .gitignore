@@ -32,4 +32,4 @@ package-lock.json
 
 #variables de entorno
 .env
-*firebaseConfig.js
+./src/firebaseConfig.js

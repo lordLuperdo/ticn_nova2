@@ -293,7 +293,7 @@ main{
 .container_main{
   flex-direction: column;
   display: flex;
-  width: 40%;
+  width: 50%;
   height: 70%;
   gap: 1%;
   margin-top: 3%;
@@ -309,7 +309,7 @@ main{
 
 .main_parrafo{
   color: white;
-
+  max-width: 75%;
 
 }
 
@@ -474,8 +474,27 @@ width: 80%;
  height: 50%;
  font-weight: 700;
 }
-
-
+/* mdeia qrys */
+@media (width <= 1200px) {
+  .main_title{
+  font-size: 200%; 
+  }
+  .texto_card_main{
+    font-size: 75%;
+    
+  }
+ .container_main{
+  justify-content: center;
+  
+ }
+}
+@media (width <= 763px) {
+  .inge{
+    display: none;
+  }
+  
+}
+/* segunda seccion************************************ */
 
 .home_plus{
   margin-top:35vh;

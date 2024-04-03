@@ -310,7 +310,7 @@ main{
 .main_parrafo{
   color: white;
   max-width: 75%;
-
+  
 }
 
 .main_link{
@@ -327,7 +327,7 @@ main{
   color: white;
   font-weight:600;
   font-size: larger;
-
+  
   transition: all 0.5s ease;
 }
 .inge{
@@ -492,6 +492,32 @@ width: 80%;
   .inge{
     display: none;
   }
+
+  }
+  @media (width <= 425px) {
+   main{
+    height: 90vh;
+    justify-content: center;
+    
+   }
+   .container_main{
+    width: 100%;
+   }
+   .main_title, .main_parrafo{
+    text-align: center;
+    min-width: 100%;
+   }
+   .main_link{
+    width: 100%;
+    border-radius: 3px;
+   }
+
+   .sin_responsive{
+    display: none;
+    background-color: var(--second-color);
+   }
+  
+  
   
 }
 /* segunda seccion************************************ */

@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <header>
+    <header class="sin_responsive">
     <RouterLink to="/" class="logo">
      <img src="../assets/logo_tic.png" alt="no se encuentra">
     </RouterLink>
@@ -47,7 +47,7 @@ ul{
   margin: 0%;
 }
 
-header{
+.sin_responsive{
   background-color: var(--firts-color);
   display : flex;
   min-height: 9vh;
@@ -204,5 +204,11 @@ flex-direction: column;
 #link_especial:hover::after{
   width: 70%;
 }
+@media (width <= 763px) {
+   .sin_responsive{
+    display: none;
+    background-color: var(--second-color);
+   }
+  }
 
 </style>

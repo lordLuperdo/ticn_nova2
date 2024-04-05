@@ -263,6 +263,7 @@ Con un enfoque pionero, nos esforzamos por mantenernos a la cabeza de las tenden
 </template>
 
 <style>
+
 .logo{
   scale: 140%;
   margin-left: 9%;
@@ -474,52 +475,7 @@ width: 80%;
  height: 50%;
  font-weight: 700;
 }
-/* mdeia qrys */
-@media (width <= 1200px) {
-  .main_title{
-  font-size: 200%; 
-  }
-  .texto_card_main{
-    font-size: 75%;
-    
-  }
- .container_main{
-  justify-content: center;
-  
- }
-}
-@media (width <= 763px) {
-  .inge{
-    display: none;
-  }
 
-  }
-  @media (width <= 425px) {
-   main{
-    height: 90vh;
-    justify-content: center;
-    
-   }
-   .container_main{
-    width: 100%;
-   }
-   .main_title, .main_parrafo{
-    text-align: center;
-    min-width: 100%;
-   }
-   .main_link{
-    width: 100%;
-    border-radius: 3px;
-   }
-
-   .sin_responsive{
-    display: none;
-    background-color: var(--second-color);
-   }
-  
-  
-  
-}
 /* segunda seccion************************************ */
 
 .home_plus{
@@ -764,5 +720,76 @@ textarea:focus , input:focus{
   margin-top: 2%;
   color: white;
   text-align: center;
+}
+
+/* mdeia qrys */
+@media (width <= 1200px) {
+  .main_title{
+  font-size: 200%; 
+  }
+  .texto_card_main{
+    font-size: 75%;
+    
+  }
+ .container_main{
+  justify-content: center;
+  max-width: 80%;
+ }
+}
+@media (width <= 763px) {
+  .inge{
+    display: none;
+  }
+  main{
+    height: 90vh;
+    justify-content: center;
+    
+   }
+   .main_title, .main_parrafo{
+    text-align: center;
+    min-width: 100%;
+   }
+   .main_link{
+    width: 100%;
+    border-radius: 3px;
+   }
+   .container_main{
+    width: 100%;
+    background-color: aqua;
+   }
+  }
+
+  @media (width <= 630px) {
+    .home_g_touch{
+     padding: 7%;
+     margin: 7%;
+    }
+    .form_touch{
+     
+    }
+    .form_spread{
+      width: 100%;
+    }
+    .form_container{
+      flex-direction: column;
+    }
+  }
+  @media (width <= 425px) {
+   main{
+    height: 90vh;
+    justify-content: center;
+    width: 100;
+   }
+   
+   .main_title, .main_parrafo{
+    text-align: center;
+    min-width: 100%;
+   }
+   
+
+   
+  
+  
+  
 }
 </style>

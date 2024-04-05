@@ -186,4 +186,24 @@ transition: all 0.5s;
 .f_link:hover::after{
     width: 70%;
 }
+/* responsive */
+@media (width <= 763px) {
+  footer{
+    flex-direction: column;
+    align-content: center;
+    max-height: none;
+    padding: 10px;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .footer_logo{
+    max-width: 80%;
+  }
+  .container_footer_lista{
+    width: 80%;
+    margin-top: 8%;
+  }
+  
+   }
 </style>

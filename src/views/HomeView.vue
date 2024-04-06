@@ -84,6 +84,11 @@ const send_email = ()=>{
         SOLUCIÓN TÉCNICA <br> 
         PARA TU EMPRESA 
       </h1>
+      <h1 class="main_title_responsive">
+        SOMOS LA 
+        SOLUCIÓN TÉCNICA 
+        PARA TU EMPRESA 
+      </h1>
       <p class="main_parrafo">
        Con nosotros encontrarás lo que necesitas para fortalecer
        la seguridad, organizar tu data center y establecer un buen 
@@ -307,6 +312,9 @@ main{
   font-size: 310%;
   
 }
+.main_title_responsive{
+    display: none;
+   }
 
 .main_parrafo{
   color: white;
@@ -393,20 +401,22 @@ width: 80%;
 }
 .card_content{
   margin-top: 3%;
- 
-  flex-wrap: wrap;
+  
   justify-content: center;
   width: 100%;
   height: 150%;
   display: flex;
   padding: 0%;
   gap:2%;
-  
+ 
+  flex-grow: 1;
+  flex-wrap: wrap;
 }
 .card_list{
   display: flex;
   justify-content: center;
   width: 23%;
+ 
   min-height: 150%;
 }
  .round, .normal{
@@ -736,18 +746,33 @@ textarea:focus , input:focus{
   max-width: 80%;
  }
 }
-@media (width <= 763px) {
+@media (width <= 1019px) {
+.card_list{
+  min-width: 17.5rem;
+}  
+}
+
+@media (width <= 896px) {
   .inge{
     display: none;
   }
   main{
     height: 90vh;
-    justify-content: center;
+   
     
    }
-   .main_title, .main_parrafo{
+   .main_title{
+    display: none;
+   }
+
+   .main_title_responsive, .main_parrafo{
     text-align: center;
     min-width: 100%;
+   }
+   .main_title_responsive{
+    color: white;
+    display: block;
+    font-size: 150%;
    }
    .main_link{
     width: 100%;
@@ -755,8 +780,12 @@ textarea:focus , input:focus{
    }
    .container_main{
     width: 100%;
-    background-color: aqua;
+    gap: 5%;
+    margin: 0%;
    }
+   
+
+
   }
 
   @media (width <= 630px) {
@@ -778,14 +807,17 @@ textarea:focus , input:focus{
    main{
     height: 90vh;
     justify-content: center;
+    align-items: center;
     width: 100;
    }
    
    .main_title, .main_parrafo{
     text-align: center;
     min-width: 100%;
+   
    }
    
+  
 
    
   

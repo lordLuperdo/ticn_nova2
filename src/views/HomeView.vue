@@ -256,7 +256,7 @@ Con un enfoque pionero, nos esforzamos por mantenernos a la cabeza de las tenden
 </div>
   
 </div>
-<button type="submit" :class="class_enviar_datos">{{ enviar_datos }}</button>
+<button type="submit" :class=" class_enviar_datos">{{ enviar_datos }}</button>
 <p class="text_form">
   Recuerda que después de llenar el formulario un asesor se contactará contigo lo más pronto posible para solucionar cualquier inquietud que tengas.
 </p>
@@ -407,8 +407,8 @@ width: 80%;
   height: 150%;
   display: flex;
   padding: 0%;
-  gap:2%;
- 
+  row-gap:12%;
+  column-gap: 2%;
   flex-grow: 1;
   flex-wrap: wrap;
 }
@@ -416,7 +416,7 @@ width: 80%;
   display: flex;
   justify-content: center;
   width: 23%;
- 
+
   min-height: 150%;
 }
  .round, .normal{
@@ -613,6 +613,8 @@ border-radius: 0 0 16px 0;
   flex-direction: column;
   justify-content: center;
   margin-top: 5%;
+  
+
 
   view-timeline: --space;
   animation-timeline: --space;
@@ -629,17 +631,19 @@ border-radius: 0 0 16px 0;
 .cola_tecs{
   display: flex;
   gap: 1%;
+  margin-top: 3%;
+  row-gap: 2rem;
   justify-content: center;
-  padding-left: 2%;
-  padding-right: 2%;
+  margin-bottom: 3%;
+  flex-wrap: wrap;
 }
 
 .content_img_tecs{
   display: flex;
   justify-content: center;
   align-items: center;
-  
-width: 100%;
+ 
+  width: 20rem;
 }
 
 .img_tecs{
@@ -750,16 +754,38 @@ textarea:focus , input:focus{
 .card_list{
   min-width: 17.5rem;
 }  
+
+@media (width <= 1018px) {
+  .round{
+  border-radius: 0px;
+}
+.home_plus{
+  margin-top:70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
+.main_servicios{
+    width: 90%;
+    right: 5%;
+    border-radius: 0 0 10px 10px;
+   }
+   
+}
+}
+@media (width <= 602px) {
+  
+}
 @media (width <= 896px) {
   .inge{
     display: none;
   }
   main{
-    height: 90vh;
-   
-    
+    height: 70vh;
+    align-items: center;
+    justify-content: center
    }
    .main_title{
     display: none;
@@ -793,22 +819,69 @@ textarea:focus , input:focus{
      padding: 7%;
      margin: 7%;
     }
-    .form_touch{
+    .home_g_touch p{
      
+     text-align: center;
+    }
+    textarea{
+      height: 7rem;
     }
     .form_spread{
-      width: 100%;
+  
+     width: 100%;
+     gap: 0;
     }
+    
     .form_container{
       flex-direction: column;
     }
+
+    .home_g_touch button{
+      margin-top: 7%;
+      height: 3rem;
+    }
+    .home_g_touch p{
+      margin-top:18px;
+    }
+   
+    .home_g_touch input, .home_g_touch textarea, .home_g_touch select{
+      margin-top:5px;
+      
+    }
+    .tecnologias{
+      margin-top: 10%;
+    }
+    .cola_tecs{
+      margin-top: 8%;
+    }
   }
-  @media (width <= 425px) {
+
+  @media (width <= 376px) {
+    .home_g_touch h2{
+      font-size: 140%;
+    }
+    .content_img_tecs{
+  width: 10rem;
+}
+.img_tecs{
+min-width:80%;
+}
+.tecnologias{
+    margin-bottom: 5%;
+   }
+  }
+  @media (width <= 426px) {
    main{
-    height: 90vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     width: 100;
+   }
+
+   .main_servicios{
+    width: 100%;
+    right: 0%;
+    border-radius: 0 0 0 10px;
    }
    
    .main_title, .main_parrafo{
@@ -816,10 +889,18 @@ textarea:focus , input:focus{
     min-width: 100%;
    
    }
+   .tecnologias{
+    margin-bottom: 20%;
+   }
+   .cola_tecs{
+    margin-top: 6%;
+   }
    
-  
+  .img_tecs{
+  max-width: 50%;
+  }  
 
-   
+
   
   
   

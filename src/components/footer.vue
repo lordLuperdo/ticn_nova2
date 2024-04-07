@@ -187,11 +187,18 @@ transition: all 0.5s;
     width: 70%;
 }
 /* responsive */
+
+@media (width <= 1245px) {
+    footer{
+        max-height: none;
+    }
+    
+}
 @media (width <= 763px) {
   footer{
     flex-direction: column;
     align-content: center;
-    max-height: none;
+   
     padding: 10px;
     align-items: center;
     padding-top: 10%;

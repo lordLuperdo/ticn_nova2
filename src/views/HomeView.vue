@@ -373,7 +373,7 @@ width: 80%;
   width: 80%;
   right:10%;
   top: 90%;
-  padding: 2%;
+  padding: 1.5rem;
   box-sizing: border-box;
   justify-content: center;
   min-height: 27vh;
@@ -382,7 +382,6 @@ width: 80%;
 }
 
 .servicios_title{
-  display: flex;
   justify-content: center;
   color: white;
 }
@@ -824,7 +823,12 @@ textarea:focus , input:focus{
     gap: 5%;
     margin: 0%;
    }
-
+  .servicios_card{
+    width : 85%;
+    right: 8.5%;
+  }
+    
+  
 
   }
   @media (width <= 789px){
@@ -879,11 +883,20 @@ textarea:focus , input:focus{
       margin-top: 8%;
     }
   }
+  @media (width < 490px) {
+    .home_plus{
+  margin-top:115vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
   
+}
+  }
  @media (width <= 426px) {
-  p{
+  p, .title_plus{
     text-align:left;
-  hyphens:auto;
+    
  
   }
    main{
@@ -915,8 +928,35 @@ textarea:focus , input:focus{
   
 }
 
+ 
+  .home_blog{
+    padding: 2rem;
+    row-gap: 1rem;
+  }
+  .blog_info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+  .blog_cards{
+    gap: 0.7rem;
+  }
+  .card_blog{
+    padding: 2%;
+  }
 
+  .blog_submit{
+    
+    width: 100%;
+    margin: 0%;
+    gap: 0.7rem;
+  }
 
+  .blog_title{
+    min-width: none;
+    width: 100%;
+    
+  } 
 
    .tecnologias{
     margin-bottom: 20%;

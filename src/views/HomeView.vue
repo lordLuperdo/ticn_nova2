@@ -171,7 +171,7 @@ Con un enfoque pionero, nos esforzamos por mantenernos a la cabeza de las tenden
 
   
   </div>
-  <div class="foto_plus  ">
+  <div class="foto_plus ">
      <img src="../assets/plus_derecho.png" class="foto_plus2"alt="">
   </div>
   
@@ -531,8 +531,11 @@ scale: 100%;
   translate: 300px 0px;
 }
 
-.parrafo_plus{
-  text-align: center;
+ p{
+  text-align: justify;
+  hyphens:auto;
+ 
+  
 }
 
 .home_blog{
@@ -775,8 +778,20 @@ textarea:focus , input:focus{
    
 }
 }
-@media (width <= 602px) {
+@media (width <= 827px) {
+  .home_plus{
+  margin-top:55vh;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
   
+}
+.foto_plus{
+  display: none;
+}
+
 }
 @media (width <= 896px) {
   .inge{
@@ -809,15 +824,24 @@ textarea:focus , input:focus{
     gap: 5%;
     margin: 0%;
    }
-   
 
 
   }
-
-  @media (width <= 630px) {
+  @media (width <= 789px){
+  .servicios_card{
+   
+    width: 100%;
+    right: 0
+  }
+  
+  }
+  @media (width <= 635px) {
     .home_g_touch{
      padding: 7%;
      margin: 7%;
+    }
+    .card_list{
+     min-width: 13.5rem;
     }
     .home_g_touch p{
      
@@ -855,22 +879,13 @@ textarea:focus , input:focus{
       margin-top: 8%;
     }
   }
-
-  @media (width <= 376px) {
-    .home_g_touch h2{
-      font-size: 140%;
-    }
-    .content_img_tecs{
-  width: 10rem;
-}
-.img_tecs{
-min-width:80%;
-}
-.tecnologias{
-    margin-bottom: 5%;
-   }
+  
+ @media (width <= 426px) {
+  p{
+    text-align:left;
+  hyphens:auto;
+ 
   }
-  @media (width <= 426px) {
    main{
     height: 100vh;
     justify-content: center;
@@ -889,6 +904,20 @@ min-width:80%;
     min-width: 100%;
    
    }
+
+      
+   .home_plus{
+  margin-top:115vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
    .tecnologias{
     margin-bottom: 20%;
    }
@@ -901,7 +930,34 @@ min-width:80%;
   }  
 
 
+  @media (width <= 376px) {
+    .home_g_touch h2{
+      font-size: 140%;
+    }
+    .content_img_tecs{
+  width: 10rem;
+}
+.img_tecs{
+min-width:80%;
+}
+.tecnologias{
+    margin-bottom: 5%;
+   }
+   .home_g_touch{
+     padding: 7%;
+     margin: 7%;
+    }
+  }
+ 
+  .home_plus{
   
+  margin-top:115vh;
+  display: flex;
+   padding: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  
+}
   
   
 }

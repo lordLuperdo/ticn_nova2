@@ -39,3 +39,7 @@ button{
   scale: 100%;
   }
 }
+
+.no_yet{
+  display: none;
+}

@@ -8,8 +8,8 @@ const { RouterLink } = 'vue-router';
             <img src="../assets/logo_tic.png" alt="">
         </div>
       
-
-        <div class="container_footer_lista">
+           <!-- PON LA CLASE DE container_footer_lista -->
+        <div class="no_yet">
             <h3 class="titulos_footer">Servicios</h3>
             <ul class="footer_lista">
                 <li class="f_link">
@@ -76,8 +76,8 @@ const { RouterLink } = 'vue-router';
                 </li>
             </ul>
         </div>
-
-        <div class="container_footer_lista">
+          <!-- PON LA CLASE DE container_footer_lista -->
+        <div class="no_yet">
             <h3 class="titulos_footer">Sitios de interes</h3>
             <ul class="footer_lista">
                 <li class="f_link">

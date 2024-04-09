@@ -12,6 +12,8 @@ import emailjs from '@emailjs/browser';
 
 emailjs.init('HZJR_BmzqZWxZywyx')
 const class_enviar_datos= ref('g_touch_submit')
+const class_inscribir_blog=ref('g_touch_submit')
+const enviar_peticion_blog =ref('Registrarme')
 const enviar_datos= ref('Enviar datos')
 const email = ref('');
 const selectedService = ref('');
@@ -70,6 +72,11 @@ const send_email = ()=>{
     });
 }
 
+const inscribir_blog = ()=> {
+  class_inscribir_blog.value = 'g_touch_submit error'
+  enviar_peticion_blog.value = 'En este momento no contamos con este servicio'
+}
+
 </script>
 
 <template>
@@ -79,6 +86,9 @@ const send_email = ()=>{
     <img src="../assets/imagen_inge.png" alt="" class="img_inge">
   </div>
   <div class="container_main">
+      <div class="container_logo_responsive">
+        <img src="../assets/Favicon.png" alt="logo" class="imagen_logo_responsive">
+      </div>
       <h1 class="main_title">
         SOMOS LA <br> 
         SOLUCIÓN TÉCNICA <br> 
@@ -116,11 +126,12 @@ const send_email = ()=>{
                   <div class="texto_card_main">
                     <p>{{ carta.name }}</p>
                   </div>
-
-                  <RouterLink class="card_list_link" :to="carta.to">
-                     Saber más
+                  
+                  <!-- poner la clase card_list_link  -->
+                  <RouterLink class=" no_yet" :to="carta.to">
+                     Solicitar
                   </RouterLink>
-
+                  <a href="#home_g_touch" class="card_list_link" @click.prevent="smoothScroll">Solicitar</a>
               </div>
                 
             </li>
@@ -194,10 +205,10 @@ Con un enfoque pionero, nos esforzamos por mantenernos a la cabeza de las tenden
   </div>
 </div>
 
-<form class="blog_submit" action="">
+<form class="blog_submit"  @submit.prevent="inscribir_blog">
   <h2 class="blog_title">Registrate con tu correro</h2>
-  <input class="blog_input" type="text" placeholder="Ingresa tu correo">
-  <button class="" type="submit">Registrarme</button>
+  <input class="blog_input" type="text" placeholder="Ingresa tu correo" required>
+  <button :class="class_inscribir_blog" type="submit">{{ enviar_peticion_blog }}</button>
 </form>
 </article>
 
@@ -305,6 +316,9 @@ main{
   margin-top: 3%;
   margin-left: 8%;
   z-index: 1;
+}
+.container_logo_responsive{
+  display: none;
 }
 
 .main_title{
@@ -532,7 +546,7 @@ scale: 100%;
 
  p{
   text-align: justify;
-  hyphens:auto;
+  
  
   
 }
@@ -971,6 +985,17 @@ textarea:focus , input:focus{
 
 
   @media (width <= 376px) {
+
+    .container_logo_responsive{
+      display: flex;
+      margin-bottom: 1rem;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    .imagen_logo_responsive{
+      max-width:22%
+    }
     .home_g_touch h2{
       font-size: 140%;
     }

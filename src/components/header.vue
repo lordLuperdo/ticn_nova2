@@ -3,7 +3,8 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <header class="head">
+    <!-- pon clase "head" al header -->
+    <header class="no_yet">
     <RouterLink to="/" class="logo">
      <img src="../assets/logo_tic.png" alt="no se encuentra">
     </RouterLink>
@@ -35,6 +36,12 @@ import { RouterLink } from 'vue-router';
     </ul>
     </nav>
   </header>
+  <header class="head_falso">
+    <RouterLink to="/" class="logo">
+     <img src="../assets/logo_tic.png" alt="no se encuentra">
+    </RouterLink>
+    
+  </header>
  
 </template>
 
@@ -57,6 +64,20 @@ ul{
   padding-left: 3%;
   max-width: 100%;
 }
+/* eliminar */
+.head_falso{
+  background-color: var(--firts-color);
+  display : flex;
+  min-height: 9vh;
+  justify-content:center;
+  box-sizing : border-box;
+ padding: 2%;
+  max-width: 100%;
+  .logo_falso{
+    margin: 0%;
+  }
+}
+/* eliminar */
 .header_nav{
   max-width:30%;
   min-width: 30%;
@@ -209,6 +230,9 @@ flex-direction: column;
    .head{
     display: none;
     background-color: var(--second-color);
+   }
+   .head_falso{
+    display: none;
    }
   }
 

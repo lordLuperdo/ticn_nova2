@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router';
 
 <template>
     <!-- pon clase "head" al header -->
-    <header class="no_yet">
+    <header class="head">
     <RouterLink to="/" class="logo">
      <img src="../assets/logo_tic.png" alt="no se encuentra">
     </RouterLink>
@@ -36,12 +36,7 @@ import { RouterLink } from 'vue-router';
     </ul>
     </nav>
   </header>
-  <header class="head_falso">
-    <RouterLink to="/" class="logo">
-     <img src="../assets/logo_tic.png" alt="no se encuentra">
-    </RouterLink>
-    
-  </header>
+ 
  
 </template>
 

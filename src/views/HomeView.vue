@@ -128,10 +128,10 @@ const inscribir_blog = ()=> {
                   </div>
                   
                   <!-- poner la clase card_list_link  -->
-                  <RouterLink class=" no_yet" :to="carta.to">
+                  <RouterLink class="card_list_link" :to="carta.to">
                      Solicitar
                   </RouterLink>
-                  <a href="#home_g_touch" class="card_list_link" @click.prevent="smoothScroll">Solicitar</a>
+                  
               </div>
                 
             </li>
